@@ -7,15 +7,16 @@ class GuessingGame {
     }
 
     guess() {
-
+        this.aspt = Math.round((max - min) / 2);
+        return this.aspt;
     }
 
     lower() {
-
+        this.max = this.aspt;
     }
 
     greater() {
-
+        this.min = this.aspt;
     }
 }
 
